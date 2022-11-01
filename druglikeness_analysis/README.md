@@ -1,10 +1,10 @@
 # README
 
-This folder contains python scripts to independently asses the correlation between GPCR activity as predicted by GPCRLigNet and drug-likeness. This task is broken down into the following scripts, which consecutively ran in the following order:
+This folder contains python scripts to independently asses the correlation between GPCR activity as predicted by GPCRLigNet and drug-likeness. This task is broken down into the following scripts, which were consecutively ran in the following order:
 
 ### 1. `generate_ftps.py`
 
-Generates an array of Morgan fingerprints for a given list of mol objects to be assessed. Molecules with more than 80 atoms, non-organic atoms (atoms other than H, C, N, O, F, Na, P, S, Cl, Br, I), or atoms with a net charge larger than one were filtered out and not converted to Morgan fingerprints. The array of fingerprints and corresponding list of SMILE strings were saved for use in the next script.
+Generates an array of Morgan fingerprints for a given list of `mol` objects to be assessed. Molecules with more than 80 atoms, non-organic atoms (atoms other than H, C, N, O, F, Na, P, S, Cl, Br, I), or atoms with a net charge larger than one were filtered out and not converted to Morgan fingerprints. The array of fingerprints and corresponding list of SMILE strings were saved for use in the next script.
 
 
 
