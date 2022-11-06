@@ -1,0 +1,7 @@
+
+
+reshuffle_fpts_tfdats_6_2_22.py was used to generate suffled of the datasets for cross validation see prep_tfdataset_shuffle.sh
+compare_GCN_FPT_6_1_21_2.py was used for training neural nets and comparing fingerprints with the same number of model weights
+train_tfd_GCN_Fpt_6_14_21.py was used for training graph convolultion neural networks
+cicular4_train_6_17_21.py was used for training neural nets and comparing fingerprints with a different number of model weights
+
