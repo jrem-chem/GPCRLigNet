@@ -18,13 +18,14 @@ def crossentropy(y_true,y_pred):
 
 # pass the whole array of fingerprints, and predictions will be made for each
 def make_predictions(input_fpt): 
-    activity_model=keras.models.load_model("model_cicular4.tf",custom_objects={'crossentropy':crossentropy}) # may need to adjust directory based on what the current wd is. An absolute path may be best
+    
+    activity_model=keras.models.load_model("models/cicular_4_models_6_17_21/model_cicular4.tf",custom_objects={'crossentropy':crossentropy}) # may need to adjust directory based on what the current wd is. An absolute path may be best
     activity_model.compile(
             loss=keras.losses.MeanSquaredError(),#meaninging less for inference
             optimizer=keras.optimizers.Adam(learning_rate=1),#meaninging less for inference
             metrics=["MeanSquaredError"],#meaninging less for inference
         )
-    bsize=min([input_fpt.shape[0],1000]) # set batch size to min of 1000 if you dont have avaialble memory
+    bsize=min([input_fpt.shape[0],1024]) # set batch size to cap at 1024 if you dont have enough memory for the whole set at once. 
     if input_fpt.shape[0] !=0:
         pred_act=activity_model.predict(input_fpt,batch_size=bsize)
         return pred_act
