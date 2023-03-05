@@ -1,6 +1,6 @@
 # GPCRLigNet
 
-Contains python scripts described by the methods in the paper "GPCRLigNet: Rapid Screening for GPCR Active Ligands Using Machine Learning"
+Contains python scripts described by the methods in the paper "GPCRLigNet: Rapid Screening for GPCR Active Ligands Using Machine Learning" https://link.springer.com/article/10.1007/s10822-023-00497-2
 
 # How to make predictions with GPCRLigNet
 
