@@ -8,6 +8,7 @@ Contains python scripts described by the methods in the paper "GPCRLigNet: Rapid
     druglikeness_analysis/generate_fpts.py
 2) edit the following file to turn those fingerprints into logit GPCR activity predictions:
     druglikeness_analysis/make_predictions.py
-3) You will need to set the best performing model path in the python script to the best model at: models/cicular_4_models_6_17_21/model_cicular4.tf
+3) the best performing model was models/cicular_4_models_6_17_21/model_cicular4.tf
+4) other models can be found in models/cicular_4_models_6_17_21/
 
 Unfortunately the full datasets were too large for github, if you would like to see anything else please dont hesitate to reachout.
